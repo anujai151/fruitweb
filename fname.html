@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> fruit site</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+</head>
+<style>
+    *{
+        margin: auto;
+    }
+    body{
+        background-image:url('https://freedesignfile.com/upload/2017/03/Fruits-and-Splashing-water-Stock-Photo-02.jpg');
+        background-repeat: no-repeat;
+        background-size: 1600px 750px;
+    }
+    h1{
+        font-size: 35px;
+        text-align: center;
+        animation: color 15s infinite;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        height: 55px;
+        width: 1600px;
+        color: white;
+        background-color:yellowgreen;
+    }
+    #container{
+        z-index: -1;
+        display: none;
+        border-width: 10px;
+        top: 120px;
+    }
+    nav{
+        margin-top: 1px;
+        width: 250px;
+        height: 500px;
+        padding-top: 1px;
+        float: left;
+        background-color: aliceblue;
+        
+    }
+    nav ul{
+        display: inline;
+        list-style: none;
+    }
+    nav ul li{
+        float: left;
+        padding: 20px;
+    }
+    nav ul li a{
+        color: red;
+        padding: 6px 8px;
+        font-size: 22px;
+        display: block;
+        float: left;
+        text-decoration: none;
+    }
+    nav ul li a:hover{
+        color: white;
+        padding-bottom: aqua;
+        border-radius: 10px;
+        background-color: blueviolet;
+    }
+    .as{
+        color: black;
+        padding: 10px;
+    }
+    .bs{
+        color: black;
+        padding: 10px;
+    }
+    .cs{
+        color: black;
+        padding: 10px;
+    }
+    .ds{
+        color: black;
+        padding: 10px;
+    }
+    .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+.rside{
+    float: left;
+    padding: 15px;
+    border: none;
+    background-color: yellowgreen;
+}
+</style>
+<body>
+    <div>
+     <h1>FRUITSHOP <button class="rside" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">☰</button></h1>
+     </div>
+     <div  id="id01" class="modal" style="width: 250px;">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal" style="width: 80%;">CLOSE &times;</span>
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa fa-home as" aria-hidden="true"></i>HOME</a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart bs" aria-hidden="true"></i>FRUITSVARIES</a></li>
+            <li><a href="#"><i class="fa fa-shopping-bag cs" aria-hidden="true"></i>CUSTOMER</a></li>  
+            <li><a href="#"><i class="fa fa-shopping-basket ds" aria-hidden="true"></i>SHOPS</a></li>  
+        </ul>
+    </nav>  
+</div>
+</body>
+</html>

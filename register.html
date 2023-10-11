@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <title>register from</title>
+        <head>
+            <h1>New User</h1>
+        </head>
+        <body>
+        <div class="formbox">
+        <center>
+            <form class="formstyle">
+                <label for="lfirst">First Name:</label><input class="fname"  type="text" placeholder="Enter the First Name" required> 
+                <br><br>
+                <label for="lname">Last Name:</label><input class="lname"  type="text" placeholder="Enter the Last Name" required>
+                <br><br>
+                <label for="email">Email Id:</label><span class="tab"></span><input class="email" type="text" placeholder="Enter the email id" required>
+                <br><br>
+                <label for="password">Password:</label><span class="tab1"></span><input class="pword" type="password" placeholder="Enter the password" required>
+                <br><br>
+                <label for="PhoneNumber">PhoneNo:</label><span class="tab2"></span><input class="pno" type="number" placeholder="Enter the PhoneNo" required>
+                <br><br>
+                <button class="btn" type="button" onclick=check()>Submit</button>
+                <div>
+                    <p id="demo"> </p>
+                </div>
+            </form>
+            
+        </center>
+    </div>
+        </body>
+        <Style>
+            body{
+                background: url("https://cdn.pixabay.com/photo/2018/04/28/22/03/tree-3358468_1280.jpg") no-repeat;
+                background-size: cover;
+            }
+            h1{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-style: italic;
+                color: red;
+                text-align: center;
+            }
+            .formbox{
+                    border: 5px solid;
+                    color: blue;
+                    width: 1500px;
+                    height: 600px;
+                    border-style: hidden;
+                    text-align: center;  
+                    margin-top: 10px;
+            }
+            .formstyle{
+                background-color: none;
+                width: 600px;
+                height: 580px;
+                text-align: center;
+                padding: 50px;
+            } 
+            label{
+                font-size: 20px;
+                color: greenyellow;
+                font-weight: bold;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                padding: 25px;
+            }      
+            .fname{
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+                width: 200px;
+            }
+            .lname{
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+                width: 200px;
+                
+            }
+            .tab{
+                  margin-right: 20px;
+            }
+            .email{
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+                width: 200px;
+            }
+            .pword{
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+                width: 200px;
+            }
+            .tab1{
+                margin-right: 10px;
+            }
+            .pno{
+                border-radius: 10px;
+                padding: 10px;
+                text-align: center;
+                width: 200px;
+            }
+            .tab2{
+                margin-right: 10px;
+            }
+            .btn{
+                padding: 15px;
+                width: 115px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-weight: bold;
+                font-size: 22px;
+                text-align: center;
+                color: red;
+                background-color: lightgreen;
+            }     
+            #demo{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 25px;
+                color: maroon;
+            }
+    </Style>
+    <script>
+        let x;
+        function check(){
+            x=document.getElementById("demo").innerHTML="Register successfully! "
+        }
+        console.log(x)
+        </script>
+</html>
